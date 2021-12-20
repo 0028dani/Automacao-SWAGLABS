@@ -2,13 +2,12 @@ import RealizarPedido from "../pageobjects/RealizarPedidoPage"
 
 const realizarPedido = new RealizarPedido
 
-Given(/^que estou no site Le Biscuit$/, () => {
+Given(/^que estou no site SWAGLABS$/, () => {
 	realizarPedido.AcessarURL()
 	realizarPedido.Login()
 	realizarPedido.Senha()
 	realizarPedido.ClicarBotaoLogin()	
 });
-
 
 When(/^escolher os produtos$/, () => {
 	realizarPedido.Ordenar()
@@ -24,8 +23,7 @@ And(/^finalizar a compra$/, () => {
 	realizarPedido.PreenchendoCampoZipPostalCode()
 	realizarPedido.ClicarBotaoContinue()
 	realizarPedido.ClicarBotaoFinish()
-});
-	
+});	
 
 Then(/^o pedido apresenta finalizado com sucesso$/, () => {
 	realizarPedido.MenasagemDeFinalizacao()
