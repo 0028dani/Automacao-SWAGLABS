@@ -1,4 +1,4 @@
-# curso-cypress
+# Automacao-SWAGLABS
 
 # Para configurar o Ambiente:
  
